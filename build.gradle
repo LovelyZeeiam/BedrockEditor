@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'xueli.bedrockeditor'
+version '1.0'
+
+repositories {
+    maven { url "https://maven.aliyun.com/repository/central" }
+    maven { url "https://maven.aliyun.com/repository/jcenter" }
+    mavenCentral()
+
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.guava:guava:28.0-jre'
+    compile 'com.flowpowered:flow-nbt:1.0.0'
+
+}
